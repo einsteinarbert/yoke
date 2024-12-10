@@ -25,6 +25,17 @@ On Windows Yoke needs the vJoy driver. The installer can be downloaded [here](ht
 
 Now you can run the client with
 ```bash
+# 1. install msys64
+# 2. open mingw64.exe shell, install python3, pip3, venv
+pip3 install virtualenv
+# 3. init venv
+cd yoke/
+python3 -m virtualenv venv
+# get venv environment
+source venv/Scripts/activate
+# 4. install lib
+python3 install .
+# 5. run server:
 yoke
 ```
 Your computer should then show up in the Yoke app immediately if you are on the same network.
