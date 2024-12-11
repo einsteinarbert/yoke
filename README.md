@@ -34,7 +34,7 @@ python3 -m virtualenv venv
 # get venv environment
 source venv/Scripts/activate
 # 4. install lib
-python3 install .
+pip3 install .
 # 5. run server:
 yoke
 ```
